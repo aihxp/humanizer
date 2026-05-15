@@ -5,7 +5,7 @@
 ![type](https://img.shields.io/badge/type-pure--prompt%20skill-purple)
 ![dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
 ![patterns](https://img.shields.io/badge/tell%20catalog-32%20patterns-orange)
-![tools](https://img.shields.io/badge/works%20with-8%20AI%20coding%20tools-teal)
+![tools](https://img.shields.io/badge/works%20with-13%20AI%20coding%20tools-teal)
 
 A standalone, pure-prompt skill that rewrites AI-sounding prose so it reads as
 genuinely human, and rewrites in a specific writer's voice when a sample or
@@ -69,6 +69,11 @@ writing.
 | Pi Coder | `AGENTS.md` | Point Pi Coder at this repo / its `AGENTS.md` |
 | OpenCode | `AGENTS.md` or `SKILL.md` | Copy the skill into OpenCode's skills directory, or keep `AGENTS.md` in the project |
 | GitHub Copilot | `.github/copilot-instructions.md` | Copy `.github/copilot-instructions.md` + `SKILL.md` + `references/` into the target repository |
+| Windsurf | `.windsurfrules` | Keep `.windsurfrules` + `SKILL.md` + `references/` in the project Windsurf opens |
+| Cline | `.clinerules` | Keep `.clinerules` + `SKILL.md` + `references/` in the workspace Cline runs in |
+| Continue | `.continue/rules/humanizer.md` | Keep `.continue/rules/humanizer.md` + `SKILL.md` + `references/` in the project |
+| Zed | `AGENTS.md` or `.continue/rules/humanizer.md` | Zed reads `AGENTS.md` (already present); the Continue rule also applies if used |
+| Aider | `CONVENTIONS.md` | `aider --read CONVENTIONS.md`, or set `read: CONVENTIONS.md` in `.aider.conf.yml`; keep `SKILL.md` + `references/` in the repo |
 
 Every adapter points the agent at the same `SKILL.md` and `references/`, so
 the workflow is identical across tools. The simplest universal install is to
@@ -106,6 +111,10 @@ AGENTS.md                       cross-tool entry point (Codex, Antigravity, Open
 GEMINI.md                       Gemini CLI context
 .cursor/rules/humanizer.mdc     Cursor project rule
 .github/copilot-instructions.md GitHub Copilot instructions
+.windsurfrules                  Windsurf rules
+.clinerules                     Cline rules
+.continue/rules/humanizer.md    Continue / Zed rule
+CONVENTIONS.md                  Aider conventions
 references/tell-patterns.md     the 32-pattern catalog (read in Pass 2)
 references/do-not-flag.md       false positives, human markers, stop conditions
 references/voice-matching.md    voice discovery and application

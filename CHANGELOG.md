@@ -27,7 +27,8 @@ First stable release.
   both invented specifics and soft causal or temporal inference.
 - Four worked end-to-end examples (`references/examples.md`).
 - Multi-tool support: Claude Code, Cursor, Codex, Antigravity, Gemini CLI,
-  Pi Coder, OpenCode, and GitHub Copilot, via `SKILL.md`, `AGENTS.md`,
-  `.cursor/rules/humanizer.mdc`, `GEMINI.md`, and
-  `.github/copilot-instructions.md`.
+  Pi Coder, OpenCode, GitHub Copilot, Windsurf, Cline, Continue, Zed, and
+  Aider, via `SKILL.md`, `AGENTS.md`, `.cursor/rules/humanizer.mdc`,
+  `GEMINI.md`, `.github/copilot-instructions.md`, `.windsurfrules`,
+  `.clinerules`, `.continue/rules/humanizer.md`, and `CONVENTIONS.md`.
 - Verification eval set (`evals/evals.json`), MIT license.
