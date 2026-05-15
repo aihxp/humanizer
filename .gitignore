@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Python (only used by optional external validators, never shipped)
+__pycache__/
+*.pyc
+
+# Local scratch and editor cruft
+*.log
+.idea/
+.vscode/
+*.tmp
