@@ -12,6 +12,27 @@ genuinely human, and rewrites in a specific writer's voice when a sample or
 style profile is available. It is just instructions: `SKILL.md` plus a few
 reference files. No scripts, no dependencies, no network access.
 
+## Where this comes from
+
+This skill was built from the voice-preservation logic that powers
+[Scriveno](https://github.com/aihxp/scriveno) (formerly Scriven), an
+AI-native longform writing system whose core promise is narrow and
+high-stakes: drafted prose should sound like the writer, not like AI.
+Scriveno is a spec-driven creative-writing, publishing, and translation
+pipeline for AI coding agents. It profiles a writer's voice, loads that
+Voice DNA into every drafting step, keeps each unit on fresh context, and
+runs a Polish pass (editor review, line and copy edit, voice check,
+originality check) so prose stays specific to the project instead of
+collapsing into generic machine output.
+
+`humanizer` lifts the part of that pipeline that finds and removes AI writing
+tells while protecting a writer's authentic voice, and packages it as a
+standalone, tool-agnostic skill: the same de-slop, restraint, and
+voice-matching philosophy Scriveno applies across a full manuscript, usable
+on any prose in any supported tool. If you want the whole writing,
+publishing, and translation pipeline rather than just this de-slop layer, see
+Scriveno: https://github.com/aihxp/scriveno (npm package: `scriveno-cli`).
+
 ## Why this one is different
 
 - **Faithfulness over liveliness.** A three-layer guard plus a mandatory
