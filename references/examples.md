@@ -1,0 +1,282 @@
+# Worked Examples
+
+Read this when you are unsure what good output looks like. Three full runs:
+generic de-slop, voice-first, and restraint. Each shows the input, brief
+pass-by-pass reasoning, and the final deliverable in the exact output contract.
+
+The third example is the most important. It shows the skill correctly doing
+almost nothing to prose that only looks sloppy. If you can do Example 3, you
+will not over-edit.
+
+---
+
+## Example 1: Generic de-slop (no voice available)
+
+**User:** "this reads like ChatGPT, can you fix it"
+
+**Input:**
+> In today's rapidly evolving digital landscape, it is important to note that
+> customer feedback stands as a pivotal cornerstone of product success.
+> Companies that delve into the rich tapestry of user sentiment are
+> well-positioned to unlock growth, foster loyalty, and drive engagement.
+> Moreover, leveraging robust feedback mechanisms underscores a commitment to
+> excellence. Ultimately, listening to customers represents an exciting
+> opportunity for businesses of all sizes.
+
+**Step 0:** No sample, no author named. `Glob` finds no VOICE.md or
+STYLE-GUIDE.md. Generic mode. Skip Pass 1.
+
+**Pass 2 (tell removal, against the catalog):** Inflated significance
+("pivotal cornerstone," pattern 1). AI vocabulary cluster ("landscape,"
+"delve," "tapestry," "robust," "foster," pattern 15). Filler and hedging ("it
+is important to note," pattern 8). Rule-of-three ("unlock growth, foster
+loyalty, and drive engagement," pattern 12). Signpost-conclusion ("Ultimately
+... represents an exciting opportunity," pattern 13). The whole thing asserts
+importance and says nothing concrete. Fix by writing the actual claim, and
+introduce real sentence-length variance.
+
+**Pass 3 (self-audit):** What still reads as machine? The original had no
+specifics at all, so the rewrite must not invent any. Keep it short and honest
+rather than smuggling in fake numbers. Check: did I install a uniform rhythm?
+Vary the closing sentence so it does not match the opening shape. No detail to
+preserve (there was none); say so in the meaning check.
+
+### Humanized draft
+Voice: generic
+
+> Customer feedback is the cheapest way to find out what is wrong with a
+> product before it costs you. Read it. The companies that act on it tend to
+> keep customers longer than the ones that run quarterly surveys and file the
+> results. Size does not change this. A two-person team and a thousand-person
+> company both lose users for reasons the users will tell them, if asked.
+
+### What changed
+- Inflated significance and authority: dropped "pivotal cornerstone" and the
+  importance framing; stated the actual point.
+- Lexical tics: removed the landscape / delve / tapestry / robust / foster
+  cluster.
+- Filler and hedging: cut "it is important to note" and "Moreover."
+- Formulaic structure: removed the rule-of-three and the upbeat generic
+  conclusion; the close now makes a concrete claim.
+- Rhythm: sentence lengths now swing (a five-word imperative next to a long
+  one) instead of even medium-length lines.
+
+### Deliberately left alone
+- The neutral, mildly persuasive register. The user did not give a voice, so
+  generic mode keeps a plain professional tone rather than inventing a persona.
+
+### Meaning check
+No facts or numbers existed to change; the rewrite preserves the original
+claim (feedback matters, for companies of any size) and invents no data.
+
+### Next step
+No file path was given. Stopping here.
+
+---
+
+## Example 2: Voice-first (a VOICE.md was found)
+
+**User:** "humanize this and make it sound like me, my style file is in the
+repo"
+
+**Input:** same paragraph as Example 1.
+
+**Discovered `VOICE.md`:**
+```
+# Voice
+## Cadence
+Short. Blunt. One long sentence per paragraph, maximum, for contrast.
+## Diction
+Plain Anglo-Saxon. No business words. Mild profanity allowed.
+## Signature moves
+Start sentences with "And" or "But." Rhetorical question, then answer it.
+## Avoid
+Adverbs. The word "leverage." Tricolons. Uplift.
+## Stance
+Skeptical, a little tired, has seen the cycle before.
+```
+
+**Step 0:** Profile found. Voice mode. Read voice-matching.md.
+
+**Pass 1 (voice injection):** Re-cast toward the profile first. Short blunt
+sentences, one long contrast sentence, an "And" opener, a question answered,
+skeptical-tired stance, no adverbs, no tricolons, no uplift.
+
+**Pass 2 (tell removal, within the voice):** Same catalog flags as Example 1,
+but the fixes must stay inside this voice. The generic rule says vary rhythm;
+this voice *is* a rhythm (short, with one long sentence), so respect the
+profile over the generic default.
+
+**Pass 3 (self-audit):** Tells gone? Yes. Voice intact and not a caricature?
+Keep the skepticism dry, not a parody of world-weariness. No invented facts.
+
+### Humanized draft
+Voice: from VOICE.md
+
+> Customer feedback is just users telling you what is broken. That is all it
+> is. You can read it now, for free, or you can pay a consultant to tell you
+> the same thing in a year with a slide deck. And here is the part nobody
+> wants to hear: the small teams that actually act on it usually keep
+> customers longer than the big ones that survey everyone, chart it, and
+> change nothing. Read the feedback. Then do something.
+
+### What changed
+- Voice: re-cast into short blunt sentences with one long contrast sentence,
+  an "And" opener, a question-and-answer move, skeptical-tired stance, per
+  VOICE.md.
+- Lexical tics: removed the landscape / delve / tapestry cluster and
+  "leverage" (explicitly on the avoid-list).
+- Inflated significance, filler, hedging, rule-of-three, uplifting close: all
+  removed; the close is now a flat two-sentence instruction.
+
+### Deliberately left alone
+- Mild edge and the rhetorical question. The profile asks for skepticism and
+  question-then-answer; these are voice, not tells.
+
+### Meaning check
+Same underlying claim as the source (act on feedback; small teams that do
+often retain better). No facts or numbers invented.
+
+### Next step
+Offer to write this into the file the user names, on confirmation.
+
+---
+
+## Example 3: Restraint (genuine human prose that only looks sloppy)
+
+**User:** "make this sound less like AI"
+
+**Input (a real person, formal register, two em dashes, one tricolon):**
+> I have taught this seminar for nineteen years, and the pattern never
+> changes: the students who struggle most in October are, almost without
+> exception, the ones who do best in May. What looks like confusion in week
+> three (the long silences, the abandoned drafts, the office-hours visits that
+> start with "I think I'm lost") is usually the sound of someone actually
+> rebuilding how they read. It is uncomfortable to watch and worse to
+> experience. I no longer try to rescue them too early.
+
+**Step 0:** No voice file, no sample. Generic mode.
+
+**Pass 2 (tell removal):** Run the catalog honestly. Candidate flags and the
+verdicts:
+- Two em dashes: pattern 21, but the restraint note says one or two in a
+  piece is normal human punctuation. Not a tell here. Leave them.
+- A tricolon ("the long silences, the abandoned drafts, the office-hours
+  visits"): pattern 12, but it is a single earned list with a specific,
+  concrete payload, not reflexive padding. Leave it.
+- A colon and a parenthetical: ordinary human syntax, not artifacts.
+- "almost without exception": mild hedge, but it is the writer's honest,
+  load-bearing qualifier (pattern 9 restraint, and a human marker in
+  do-not-flag.md Part 2). Keep it.
+
+There is nothing machine here. The prose has specific details (nineteen years,
+October, May, week three, a quoted student line), mixed feeling (uncomfortable
+to watch and worse to experience), and real sentence-length swing. These are
+the human markers do-not-flag.md says to protect.
+
+**Pass 3 (self-audit):** The honest answer to "what would tip a reader that a
+machine wrote this" is: nothing would. A heavy rewrite here would be the
+failure. Output minimal edits (none needed) and explain the restraint.
+
+### Humanized draft
+Voice: generic
+
+> I have taught this seminar for nineteen years, and the pattern never
+> changes: the students who struggle most in October are, almost without
+> exception, the ones who do best in May. What looks like confusion in week
+> three (the long silences, the abandoned drafts, the office-hours visits that
+> start with "I think I'm lost") is usually the sound of someone actually
+> rebuilding how they read. It is uncomfortable to watch and worse to
+> experience. I no longer try to rescue them too early.
+
+(Unchanged. This is already human writing.)
+
+### What changed
+- Nothing. No machine tells were present.
+
+### Deliberately left alone
+- The two em dashes: within normal human range (pattern 21 restraint), not
+  overuse.
+- The tricolon: a single earned list with concrete content, not pattern-12
+  padding.
+- "almost without exception": the writer's honest qualifier and a human
+  marker; removing it would change the claim.
+
+### Meaning check
+Nothing changed, so nothing to drift. Flagging this would have stripped
+specific detail and voice from genuine human prose, which is the worst error
+this skill can make.
+
+### Next step
+No file path was given. Stopping here.
+
+---
+
+## Example 4: Stance mode on (opt-in liveliness without fabrication)
+
+**User:** "humanize this and give it some edge, don't keep it so neutral:
+Our migration from a monolith to microservices was completed over seven
+months (January to July 2024) by a team of twelve engineers. Using Kubernetes,
+deployment time fell from 45 minutes to 6. Infrastructure costs rose 18%
+temporarily during the transition."
+
+**Step 0:** No voice file, no sample. **Step 0b:** the user explicitly asked
+for edge and "not so neutral", so stance mode is on. Generic + stance.
+
+**Pass 2 (tell removal, with stance):** de-slop normally, but the narrator now
+has a point of view about the stated facts. The danger to watch: stance must
+stay a reaction to what is there. The source says costs rose 18%; it does not
+say why. An opinion about the 18% is allowed; an invented reason for it is
+not.
+
+**Pass 3 + Meaning check (extra force in stance mode):** confirm every
+opinionated clause attaches to a stated fact, and that no cause, mechanism, or
+event was smuggled in as "candor."
+
+### Humanized draft
+Voice: generic + stance
+
+> Seven months, twelve engineers, one monolith taken apart and put back
+> together as microservices. January to July 2024. The headline number is the
+> one worth caring about: deploys went from 45 minutes to 6 once we were on
+> Kubernetes. That is not a tuning win, that is a different way of working.
+> The bill has a catch. Infrastructure ran 18% higher during the move, and
+> "temporarily" is carrying a lot of weight in that sentence until the trend
+> actually turns.
+
+### What changed
+- Stance: added a clear point of view (the deploy number is what matters; the
+  cost framing deserves skepticism) and varied the rhythm hard, per the user's
+  explicit request for edge.
+- Inflated significance, filler, formulaic structure, copula avoidance:
+  removed as in the other examples.
+
+### Deliberately left alone
+- Every figure: seven months, Jan-Jul 2024, twelve engineers, 45 to 6
+  minutes, 18%, Kubernetes. Stance never touches the numbers.
+
+### Meaning check
+No facts, numbers, names, or claims changed. On stance discipline: the line
+"that is a different way of working" is a judgment about the stated 45-to-6
+result, not a new fact. The skepticism about "temporarily" is an opinion about
+the source's own word, not an invented cost cause; I specifically did not
+write anything like "costs rose because we ran both systems in parallel,"
+since the source never states why costs rose. No invented mechanism, event,
+person, or experience.
+
+### Next step
+No file path was given. Stopping here.
+
+---
+
+## What these examples teach
+
+1. Generic mode de-slops without inventing a persona or fake specifics.
+2. Voice mode lets the profile override the generic rhythm rule; a clean
+   rewrite that does not sound like the writer has failed.
+3. The catalog is a question, not a verdict. Run every flag through its
+   restraint note and do-not-flag.md before you touch anything. Doing nothing,
+   explained, is a correct and common output.
+4. Stance mode (opt-in) adds attitude, not content. An opinion about a stated
+   fact is the goal; an invented cause or event behind that fact is the exact
+   failure the mode is designed to prevent.
