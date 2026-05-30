@@ -3,6 +3,22 @@
 All notable changes to this skill are documented here. This project adheres
 to semantic versioning.
 
+## [1.1.1] - 2026-05-29
+
+Documentation consistency pass. No change to the skill's method or behavior.
+
+### Fixed
+
+- Worked-example count corrected from three to four in `SKILL.md` and
+  `references/examples.md`; the stance-mode example (Example 4) had been added
+  without updating the count (the README and this changelog already said four).
+- AI-vocabulary tell citation in `references/examples.md` Example 1: pattern 15
+  (diff-anchored writing) corrected to pattern 16 (overused AI vocabulary).
+
+### Added
+
+- Keep a Changelog version-comparison links in this file's footer.
+
 ## [1.1.0] - 2026-05-29
 
 ### Added
@@ -56,5 +72,6 @@ First stable release.
   `.github/copilot-instructions.md`.
 - Verification eval set (`evals/evals.json`), MIT license.
 
+[1.1.1]: https://github.com/aihxp/humanizer/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/aihxp/humanizer/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/aihxp/humanizer/releases/tag/v1.0.0
