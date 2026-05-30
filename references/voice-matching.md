@@ -54,7 +54,7 @@ phrases.
 ## Part 3: Optional VOICE.md schema (interop convenience, not a requirement)
 
 The skill works with no profile file at all. This schema exists so users (and
-adjacent tools like Scriven STYLE-GUIDE.md or a Pillars AGENTS.md voice
+adjacent tools like Scriveno STYLE-GUIDE.md or a Pillars AGENTS.md voice
 section) can hand the skill a structured profile and get sharper results. If a
 file roughly follows this shape, read it directly; if it does not, fall back
 to Part 2 and read it as prose.

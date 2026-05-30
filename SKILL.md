@@ -15,7 +15,7 @@ description: >-
   only says the text feels off, sounds corporate, reads like AI, or is too
   generic, without naming this skill or the word humanize.
 allowed-tools: Read, Write, Edit, Glob, Grep
-compatibility: claude-code, cursor, codex, antigravity, gemini-cli, pi-coder, opencode, copilot
+compatibility: claude-code, cursor, codex, antigravity, gemini-cli, pi-coder, opencode, copilot, windsurf, cline, continue, zed, aider
 metadata:
   version: 1.0.0
 ---
@@ -77,7 +77,7 @@ guess is instantly correctable.
    varied human prose. Do not invent a persona or a backstory; an invented
    voice is its own failure. Generic mode skips Pass 1 and starts at Pass 2.
 
-This discovery is filesystem-generic. It interoperates with Scriven, Pillars,
+This discovery is filesystem-generic. It interoperates with Scriveno, Pillars,
 or any project that happens to keep a voice file, without depending on any of
 them.
 
