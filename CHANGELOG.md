@@ -55,3 +55,6 @@ First stable release.
   `.cursor/rules/humanizer.mdc`, `GEMINI.md`, and
   `.github/copilot-instructions.md`.
 - Verification eval set (`evals/evals.json`), MIT license.
+
+[1.1.0]: https://github.com/aihxp/humanizer/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/aihxp/humanizer/releases/tag/v1.0.0
