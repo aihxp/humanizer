@@ -292,4 +292,5 @@ Read these on demand, not upfront:
 - `references/voice-matching.md` whenever Step 0 found a voice. How to extract
   and apply a voice, the optional VOICE.md schema, and conflict resolution.
 - `references/examples.md` when you are unsure what good output looks like.
-  Three full worked runs: generic de-slop, voice-first, and a restraint case.
+  Four full worked runs: generic de-slop, voice-first, a restraint case, and
+  a stance-mode case.

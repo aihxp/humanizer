@@ -1,7 +1,7 @@
 # Worked Examples
 
-Read this when you are unsure what good output looks like. Three full runs:
-generic de-slop, voice-first, and restraint. Each shows the input, brief
+Read this when you are unsure what good output looks like. Four full runs:
+generic de-slop, voice-first, restraint, and stance mode. Each shows the input, brief
 pass-by-pass reasoning, and the final deliverable in the exact output contract.
 
 The third example is the most important. It shows the skill correctly doing
@@ -28,7 +28,7 @@ STYLE-GUIDE.md. Generic mode. Skip Pass 1.
 
 **Pass 2 (tell removal, against the catalog):** Inflated significance
 ("pivotal cornerstone," pattern 1). AI vocabulary cluster ("landscape,"
-"delve," "tapestry," "robust," "foster," pattern 15). Filler and hedging ("it
+"delve," "tapestry," "robust," "foster," pattern 16). Filler and hedging ("it
 is important to note," pattern 8). Rule-of-three ("unlock growth, foster
 loyalty, and drive engagement," pattern 12). Signpost-conclusion ("Ultimately
 ... represents an exciting opportunity," pattern 13). The whole thing asserts
