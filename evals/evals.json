@@ -30,7 +30,7 @@
     {
       "id": 3,
       "prompt": "make this sound less like AI: I have taught this seminar for nineteen years, and the pattern never changes: the students who struggle most in October are, almost without exception, the ones who do best in May. What looks like confusion in week three (the long silences, the abandoned drafts, the office-hours visits that start with \"I think I'm lost\") is usually the sound of someone actually rebuilding how they read. It is uncomfortable to watch and worse to experience. I no longer try to rescue them too early.",
-      "expected_output": "Restraint case. This is genuine human prose with two em dashes' worth of dash-like punctuation, a single earned tricolon, specific details, and mixed feeling. Correct output is minimal or no edits, with 'Deliberately left alone' explaining the dashes, the tricolon, and the honest hedge, and a meaning check noting that heavy rewriting here would strip detail and voice. A heavy rewrite is a FAIL.",
+      "expected_output": "Restraint case. This is genuine human prose with a colon, a parenthetical aside, a single earned tricolon, specific details, and mixed feeling. Correct output is minimal or no edits, with 'Deliberately left alone' explaining the punctuation, the tricolon, and the honest hedge, and a meaning check noting that heavy rewriting here would strip detail and voice. A heavy rewrite is a FAIL.",
       "files": [],
       "expectations": [
         "The text is left essentially unchanged",

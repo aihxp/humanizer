@@ -146,7 +146,7 @@ Offer to write this into the file the user names, on confirmation.
 
 **User:** "make this sound less like AI"
 
-**Input (a real person, formal register, two em dashes, one tricolon):**
+**Input (a real person, formal register, a colon, a parenthetical, one tricolon):**
 > I have taught this seminar for nineteen years, and the pattern never
 > changes: the students who struggle most in October are, almost without
 > exception, the ones who do best in May. What looks like confusion in week
@@ -159,12 +159,13 @@ Offer to write this into the file the user names, on confirmation.
 
 **Pass 2 (tell removal):** Run the catalog honestly. Candidate flags and the
 verdicts:
-- Two em dashes: pattern 21, but the restraint note says one or two in a
-  piece is normal human punctuation. Not a tell here. Leave them.
 - A tricolon ("the long silences, the abandoned drafts, the office-hours
   visits"): pattern 12, but it is a single earned list with a specific,
   concrete payload, not reflexive padding. Leave it.
-- A colon and a parenthetical: ordinary human syntax, not artifacts.
+- The colon after "never changes" and the parenthetical aside: ordinary human
+  syntax doing real work. A single strong connective like this is normal
+  punctuation, the same way one or two em dashes would be (pattern 22
+  restraint); it is not a tell.
 - "almost without exception": mild hedge, but it is the writer's honest,
   load-bearing qualifier (pattern 9 restraint, and a human marker in
   do-not-flag.md Part 2). Keep it.
@@ -195,8 +196,9 @@ Voice: generic
 - Nothing. No machine tells were present.
 
 ### Deliberately left alone
-- The two em dashes: within normal human range (pattern 21 restraint), not
-  overuse.
+- The colon and the parenthetical aside: a single strong connective and one
+  aside, within normal human range (pattern 22 applies the same restraint to
+  one or two em dashes), not artifacts.
 - The tricolon: a single earned list with concrete content, not pattern-12
   padding.
 - "almost without exception": the writer's honest qualifier and a human
